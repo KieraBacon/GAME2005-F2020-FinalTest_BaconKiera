@@ -29,7 +29,7 @@ public class RigidBody3D : MonoBehaviour
     {
         timer = 0.0f;
         gravity = -0.001f;
-        //velocity = Vector3.zero;
+        velocity = Vector3.zero;
         acceleration = new Vector3(0.0f, gravity * gravityScale, 0.0f);
         if (bodyType == BodyType.DYNAMIC)
         {
@@ -45,7 +45,7 @@ public class RigidBody3D : MonoBehaviour
             if (isFalling)
             {
                 timer += Time.deltaTime;
-                
+
                 if (gravityScale < 0)
                 {
                     gravityScale = 0;
@@ -54,13 +54,9 @@ public class RigidBody3D : MonoBehaviour
                 if (gravityScale > 0)
                 {
                     velocity += acceleration * 0.5f * timer * timer;
+                    transform.position += velocity;
                 }
             }
-            else
-            {
-                velocity.y = 0;
-            }
-            transform.position += velocity * Time.deltaTime;
         }
     }
 

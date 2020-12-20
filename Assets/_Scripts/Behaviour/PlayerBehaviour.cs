@@ -43,6 +43,9 @@ public class PlayerBehaviour : MonoBehaviour
     {
         if (Input.GetButtonDown("Cancel"))
         {
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.None;
+            this.enabled = false;
             SceneManager.LoadScene("Start");
         }
     }

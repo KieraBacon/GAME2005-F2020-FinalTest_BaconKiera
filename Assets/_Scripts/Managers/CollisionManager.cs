@@ -242,13 +242,6 @@ public class CollisionManager : MonoBehaviour
                     }
                 }
 
-                if (contactB.face == Vector3.down)
-                {
-                    //a.gameObject.GetComponent<RigidBody3D>().Stop();
-                    a.isGrounded = true;
-                }
-
-
                 // add the new contact
                 a.contacts.Add(contactB);
                 a.isColliding = true;
