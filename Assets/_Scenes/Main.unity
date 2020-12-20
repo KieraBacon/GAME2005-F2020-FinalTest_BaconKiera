@@ -2125,7 +2125,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 5, y: 5}
-  m_SizeDelta: {x: 310, y: 30}
+  m_SizeDelta: {x: 310, y: 70}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2091280428
 MonoBehaviour:
@@ -2160,7 +2160,12 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Press Esc to return to the main menu.
+  m_Text: 'Press Left Mouse Button to fire.
+
+    Press Space to jump.
+
+    Press
+    P to return to the main menu.'
 --- !u!222 &2091280429
 CanvasRenderer:
   m_ObjectHideFlags: 0
